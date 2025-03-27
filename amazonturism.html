@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>www.amazonturism.com</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="reset.css" rel="stylesheet" type="text/css" />
+  <link href="estilo.css" rel="stylesheet" type="text/css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+  <script src="script.js"></script>
+</head>
+
+<body>
+  <header class="container">
+    <img class="logo" src="img/amazonturism.png" alt="Logo" />
+    <h1 class="heading">Guiando a sua aventura</h1>
+    <section class="menu">
+      <section class="menu-busca">
+        <form id="form-busca" name="form-busca">
+          <input type="search" name="sc" id="sc">
+          <input type="image" src="img/busca.png" alt="lupa" class="lupa" onclick="javascript:return Busca()">
+        </form>
+      </section>
+      <nav class="menu-opcoes">
+        <ul>
+          <li><a href="login.html">Acessar</a></li>
+          <li><a href="servicos.html">Serviços</a></li>
+          <li><a href="experiencias.html">Experiências</a></li>
+          <li><a href="faleconosco.html">Fale conosco</a></li>
+        </ul>
+      </nav>
+    </section>
+  </header>
+
+  <section class="main">
+    <section class="destaque">
+      <p class="destaque-texto-grande">Bem vindo</p>
+      <p class="destaque-texto-pequeno">
+        Tenha a melhor companhia de turismo
+        <br>para te acompanhar em aventuras <span class="destaque-palavra"> marcantes</span>
+      </p>
+      <div id="modal" class="modal-overlay">
+        <div class="modal">
+            <span class="close-btn" id="fecharmodal">&times;</span>
+            <h2>Confira<br>nossas<br>promoções</h2>
+            <p>Pacotes promocionais<br>com até 50% desconto</p>
+            <a href="promocoes.html" id="promobutton" class="modal-btn">Ver Promoções</a>
+            <!--<button id="promoButton" class="btn-promo">Ver Promoções</button>-->
+        </div>
+      </div>
+    </section>      
+  </section>
+
+  <section class="cards">
+    <article>
+      <a href="destinos.html">
+        <img class="article-img" src="img/destinos.jpg" alt="Destinos">
+        <h1 class="article-titulo">Conheça nossos destinos</h1>
+      </a>
+    </article>
+    <article>
+      <a href="colaboradores.html">
+        <img class="article-img" src="img/colabs.jpg" alt="Colaboradores">
+        <h1 class="article-titulo">Nossos colaboradores</h1>
+      </a>
+    </article>
+    <article>
+      <a href="pacotes.html">
+        <img class="article-img" src="img/pacotes.jpg" alt="Pacotes">
+        <h1 class="article-titulo">Pacotes</h1>
+      </a>
+    </article>
+  </section>
+
+  <section class="layout-infos">
+    <section class="info">
+      <div class="content">
+        <h2>Faça parte do nosso time! </h2>
+        <h3>Se você ama a natureza, é uma pessoa ligada a sustentabilidade e preservação do Meio Ambiente (principalmente
+          A Floresta Amazônica).Você é a pessoa perfeita para trababalhar com a gente.
+        </h3>
+      </div>
+      <figure id="trabalheconosco">
+        <a href="trabalheconosco.html">
+          <img src="img/amazonturismo.jpg" alt="Trabalhe conosco na AmazonTurism"></a>
+      </figure>
+    </section>
+  </section>
+  </section>
+
+  <footer class="footer py-4">
+    <div class="container">
+      <div class="row align-items-center">
+        <img src="img/amazonturism.png" alt="Logo AmazonTurism">
+        <div class="col-lg-4 text-lg-start">Copyright &copy;2025 AmazonTurism</div>
+        <div class="col-lg-4 text-lg-end">
+          <a class="link-dark text-decoration-none me-3" href="#!">Política de privacidade</a>
+          <a class="link-dark text-decoration-none" href="#!">Termos de uso</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
